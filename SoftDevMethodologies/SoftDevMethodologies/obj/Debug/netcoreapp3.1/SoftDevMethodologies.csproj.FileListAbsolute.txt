@@ -1,0 +1,16 @@
+D:\Coding\C#\SoftDevMethodologies\SoftDevMethodologies\SoftDevMethodologies\bin\Debug\netcoreapp3.1\SoftDevMethodologies.exe
+D:\Coding\C#\SoftDevMethodologies\SoftDevMethodologies\SoftDevMethodologies\bin\Debug\netcoreapp3.1\SoftDevMethodologies.deps.json
+D:\Coding\C#\SoftDevMethodologies\SoftDevMethodologies\SoftDevMethodologies\bin\Debug\netcoreapp3.1\SoftDevMethodologies.runtimeconfig.json
+D:\Coding\C#\SoftDevMethodologies\SoftDevMethodologies\SoftDevMethodologies\bin\Debug\netcoreapp3.1\SoftDevMethodologies.runtimeconfig.dev.json
+D:\Coding\C#\SoftDevMethodologies\SoftDevMethodologies\SoftDevMethodologies\bin\Debug\netcoreapp3.1\SoftDevMethodologies.dll
+D:\Coding\C#\SoftDevMethodologies\SoftDevMethodologies\SoftDevMethodologies\bin\Debug\netcoreapp3.1\SoftDevMethodologies.pdb
+D:\Coding\C#\SoftDevMethodologies\SoftDevMethodologies\SoftDevMethodologies\obj\Debug\netcoreapp3.1\SoftDevMethodologies.csproj.AssemblyReference.cache
+D:\Coding\C#\SoftDevMethodologies\SoftDevMethodologies\SoftDevMethodologies\obj\Debug\netcoreapp3.1\SoftDevMethodologies.Form1.resources
+D:\Coding\C#\SoftDevMethodologies\SoftDevMethodologies\SoftDevMethodologies\obj\Debug\netcoreapp3.1\SoftDevMethodologies.csproj.GenerateResource.cache
+D:\Coding\C#\SoftDevMethodologies\SoftDevMethodologies\SoftDevMethodologies\obj\Debug\netcoreapp3.1\SoftDevMethodologies.GeneratedMSBuildEditorConfig.editorconfig
+D:\Coding\C#\SoftDevMethodologies\SoftDevMethodologies\SoftDevMethodologies\obj\Debug\netcoreapp3.1\SoftDevMethodologies.AssemblyInfoInputs.cache
+D:\Coding\C#\SoftDevMethodologies\SoftDevMethodologies\SoftDevMethodologies\obj\Debug\netcoreapp3.1\SoftDevMethodologies.AssemblyInfo.cs
+D:\Coding\C#\SoftDevMethodologies\SoftDevMethodologies\SoftDevMethodologies\obj\Debug\netcoreapp3.1\SoftDevMethodologies.csproj.CoreCompileInputs.cache
+D:\Coding\C#\SoftDevMethodologies\SoftDevMethodologies\SoftDevMethodologies\obj\Debug\netcoreapp3.1\SoftDevMethodologies.dll
+D:\Coding\C#\SoftDevMethodologies\SoftDevMethodologies\SoftDevMethodologies\obj\Debug\netcoreapp3.1\SoftDevMethodologies.pdb
+D:\Coding\C#\SoftDevMethodologies\SoftDevMethodologies\SoftDevMethodologies\obj\Debug\netcoreapp3.1\SoftDevMethodologies.genruntimeconfig.cache
