@@ -24,5 +24,17 @@ namespace SoftDevMethodologies
         {
 
         }
+
+        private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form2 waterfall = new Form2();
+            waterfall.ShowDialog();
+        }
+
+        private void LinkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form3 agile = new Form3();
+            agile.ShowDialog();
+        }
     }
 }
