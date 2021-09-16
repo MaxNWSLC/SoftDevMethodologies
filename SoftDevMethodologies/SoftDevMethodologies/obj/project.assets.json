@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Coding\\C#\\SoftDevMethodologies\\SoftDevMethodologies\\SoftDevMethodologies\\SoftDevMethodologies.csproj",
+      "projectUniqueName": "D:\\Coding\\C#\\SoftDevMethodologies\\SoftDevMethodologies2\\SoftDevMethodologies\\SoftDevMethodologies\\SoftDevMethodologies.csproj",
       "projectName": "SoftDevMethodologies",
-      "projectPath": "D:\\Coding\\C#\\SoftDevMethodologies\\SoftDevMethodologies\\SoftDevMethodologies\\SoftDevMethodologies.csproj",
+      "projectPath": "D:\\Coding\\C#\\SoftDevMethodologies\\SoftDevMethodologies2\\SoftDevMethodologies\\SoftDevMethodologies\\SoftDevMethodologies.csproj",
       "packagesPath": "C:\\Users\\MzMaX\\.nuget\\packages\\",
-      "outputPath": "D:\\Coding\\C#\\SoftDevMethodologies\\SoftDevMethodologies\\SoftDevMethodologies\\obj\\",
+      "outputPath": "D:\\Coding\\C#\\SoftDevMethodologies\\SoftDevMethodologies2\\SoftDevMethodologies\\SoftDevMethodologies\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MzMaX\\AppData\\Roaming\\NuGet\\NuGet.Config",
