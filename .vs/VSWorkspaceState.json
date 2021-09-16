@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\SoftDevMethodologies",
+    "\\SoftDevMethodologies\\SoftDevMethodologies"
   ],
+  "SelectedNode": "\\SoftDevMethodologies\\SoftDevMethodologies\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }

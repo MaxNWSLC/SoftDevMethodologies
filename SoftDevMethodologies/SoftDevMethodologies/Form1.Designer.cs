@@ -39,13 +39,20 @@ namespace SoftDevMethodologies
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.waterfallArrow1 = new System.Windows.Forms.Label();
+            this.waterfallArrow2 = new System.Windows.Forms.Label();
+            this.waterfallArrow3 = new System.Windows.Forms.Label();
+            this.waterfallArrow4 = new System.Windows.Forms.Label();
+            this.agileArrow = new System.Windows.Forms.Label();
+            this.kanbanLink = new System.Windows.Forms.LinkLabel();
+            this.scrumLink = new System.Windows.Forms.LinkLabel();
+            this.xpLink = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // label1
@@ -64,7 +71,7 @@ namespace SoftDevMethodologies
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.label2.Location = new System.Drawing.Point(594, 42);
+            this.label2.Location = new System.Drawing.Point(777, 42);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(103, 46);
             this.label2.TabIndex = 1;
@@ -75,7 +82,7 @@ namespace SoftDevMethodologies
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.label3.Location = new System.Drawing.Point(419, 42);
+            this.label3.Location = new System.Drawing.Point(507, 42);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 46);
             this.label3.TabIndex = 2;
@@ -96,7 +103,7 @@ namespace SoftDevMethodologies
             // 
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.linkLabel2.Location = new System.Drawing.Point(578, 88);
+            this.linkLabel2.Location = new System.Drawing.Point(761, 88);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(119, 30);
             this.linkLabel2.TabIndex = 4;
@@ -168,36 +175,26 @@ namespace SoftDevMethodologies
             this.button4.Text = "Maintenence";
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // richTextBox1
-            // 
-            this.richTextBox1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.richTextBox1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.richTextBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.richTextBox1.Location = new System.Drawing.Point(12, 454);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox1.Size = new System.Drawing.Size(1040, 395);
-            this.richTextBox1.TabIndex = 10;
-            this.richTextBox1.Text = "Some text information\nabout the methotodololologies";
-            // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.Brown;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button5.ForeColor = System.Drawing.SystemColors.Control;
-            this.button5.Location = new System.Drawing.Point(540, 370);
+            this.button5.Location = new System.Drawing.Point(680, 373);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(115, 70);
             this.button5.TabIndex = 11;
             this.button5.Text = "Concept";
             this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.Click += new System.EventHandler(this.Button5_Click);
             // 
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.IndianRed;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button6.Location = new System.Drawing.Point(483, 267);
+            this.button6.Location = new System.Drawing.Point(623, 270);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(115, 70);
             this.button6.TabIndex = 12;
@@ -207,8 +204,9 @@ namespace SoftDevMethodologies
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.Gold;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button7.Location = new System.Drawing.Point(540, 166);
+            this.button7.Location = new System.Drawing.Point(680, 169);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(115, 70);
             this.button7.TabIndex = 13;
@@ -218,9 +216,10 @@ namespace SoftDevMethodologies
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.SeaGreen;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button8.Location = new System.Drawing.Point(709, 166);
+            this.button8.Location = new System.Drawing.Point(849, 169);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(115, 70);
             this.button8.TabIndex = 14;
@@ -230,9 +229,10 @@ namespace SoftDevMethodologies
             // button9
             // 
             this.button9.BackColor = System.Drawing.Color.SteelBlue;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button9.Location = new System.Drawing.Point(752, 267);
+            this.button9.Location = new System.Drawing.Point(892, 270);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(115, 70);
             this.button9.TabIndex = 15;
@@ -242,28 +242,121 @@ namespace SoftDevMethodologies
             // button10
             // 
             this.button10.BackColor = System.Drawing.Color.Plum;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button10.Location = new System.Drawing.Point(709, 370);
+            this.button10.Location = new System.Drawing.Point(849, 373);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(115, 70);
             this.button10.TabIndex = 16;
             this.button10.Text = "Deploy";
             this.button10.UseVisualStyleBackColor = false;
             // 
+            // waterfallArrow1
+            // 
+            this.waterfallArrow1.AutoSize = true;
+            this.waterfallArrow1.Font = new System.Drawing.Font("Segoe UI", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.waterfallArrow1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.waterfallArrow1.Location = new System.Drawing.Point(191, 158);
+            this.waterfallArrow1.Name = "waterfallArrow1";
+            this.waterfallArrow1.Size = new System.Drawing.Size(80, 62);
+            this.waterfallArrow1.TabIndex = 17;
+            this.waterfallArrow1.Text = "↴ ";
+            // 
+            // waterfallArrow2
+            // 
+            this.waterfallArrow2.AutoSize = true;
+            this.waterfallArrow2.Font = new System.Drawing.Font("Segoe UI", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.waterfallArrow2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.waterfallArrow2.Location = new System.Drawing.Point(240, 216);
+            this.waterfallArrow2.Name = "waterfallArrow2";
+            this.waterfallArrow2.Size = new System.Drawing.Size(80, 62);
+            this.waterfallArrow2.TabIndex = 18;
+            this.waterfallArrow2.Text = "↴ ";
+            // 
+            // waterfallArrow3
+            // 
+            this.waterfallArrow3.AutoSize = true;
+            this.waterfallArrow3.Font = new System.Drawing.Font("Segoe UI", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.waterfallArrow3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.waterfallArrow3.Location = new System.Drawing.Point(298, 275);
+            this.waterfallArrow3.Name = "waterfallArrow3";
+            this.waterfallArrow3.Size = new System.Drawing.Size(80, 62);
+            this.waterfallArrow3.TabIndex = 19;
+            this.waterfallArrow3.Text = "↴ ";
+            // 
+            // waterfallArrow4
+            // 
+            this.waterfallArrow4.AutoSize = true;
+            this.waterfallArrow4.Font = new System.Drawing.Font("Segoe UI", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.waterfallArrow4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.waterfallArrow4.Location = new System.Drawing.Point(339, 337);
+            this.waterfallArrow4.Name = "waterfallArrow4";
+            this.waterfallArrow4.Size = new System.Drawing.Size(80, 62);
+            this.waterfallArrow4.TabIndex = 20;
+            this.waterfallArrow4.Text = "↴ ";
+            // 
+            // agileArrow
+            // 
+            this.agileArrow.AutoSize = true;
+            this.agileArrow.Font = new System.Drawing.Font("Segoe UI", 100F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.agileArrow.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.agileArrow.Location = new System.Drawing.Point(721, 206);
+            this.agileArrow.Name = "agileArrow";
+            this.agileArrow.Size = new System.Drawing.Size(190, 177);
+            this.agileArrow.TabIndex = 21;
+            this.agileArrow.Text = "↻";
+            this.agileArrow.Click += new System.EventHandler(this.Label4_Click);
+            // 
+            // kanbanLink
+            // 
+            this.kanbanLink.AutoSize = true;
+            this.kanbanLink.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.kanbanLink.Location = new System.Drawing.Point(548, 539);
+            this.kanbanLink.Name = "kanbanLink";
+            this.kanbanLink.Size = new System.Drawing.Size(141, 46);
+            this.kanbanLink.TabIndex = 22;
+            this.kanbanLink.TabStop = true;
+            this.kanbanLink.Text = "Kanban";
+            // 
+            // scrumLink
+            // 
+            this.scrumLink.AutoSize = true;
+            this.scrumLink.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.scrumLink.Location = new System.Drawing.Point(761, 539);
+            this.scrumLink.Name = "scrumLink";
+            this.scrumLink.Size = new System.Drawing.Size(121, 46);
+            this.scrumLink.TabIndex = 23;
+            this.scrumLink.TabStop = true;
+            this.scrumLink.Text = "Scrum";
+            // 
+            // xpLink
+            // 
+            this.xpLink.AutoSize = true;
+            this.xpLink.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.xpLink.Location = new System.Drawing.Point(933, 539);
+            this.xpLink.Name = "xpLink";
+            this.xpLink.Size = new System.Drawing.Size(151, 46);
+            this.xpLink.TabIndex = 24;
+            this.xpLink.TabStop = true;
+            this.xpLink.Text = "Extreme";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ClientSize = new System.Drawing.Size(1064, 861);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(1116, 742);
+            this.Controls.Add(this.xpLink);
+            this.Controls.Add(this.scrumLink);
+            this.Controls.Add(this.kanbanLink);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -274,8 +367,13 @@ namespace SoftDevMethodologies
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.waterfallArrow1);
+            this.Controls.Add(this.waterfallArrow4);
+            this.Controls.Add(this.waterfallArrow3);
+            this.Controls.Add(this.waterfallArrow2);
+            this.Controls.Add(this.agileArrow);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Software Development Methodologies";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -294,13 +392,20 @@ namespace SoftDevMethodologies
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Label waterfallArrow1;
+        private System.Windows.Forms.Label waterfallArrow2;
+        private System.Windows.Forms.Label waterfallArrow3;
+        private System.Windows.Forms.Label waterfallArrow4;
+        private System.Windows.Forms.Label agileArrow;
+        private System.Windows.Forms.LinkLabel kanbanLink;
+        private System.Windows.Forms.LinkLabel scrumLink;
+        private System.Windows.Forms.LinkLabel xpLink;
     }
 }
 
