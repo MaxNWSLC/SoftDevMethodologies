@@ -50,9 +50,9 @@ namespace SoftDevMethodologies
             this.waterfallArrow3 = new System.Windows.Forms.Label();
             this.waterfallArrow4 = new System.Windows.Forms.Label();
             this.agileArrow = new System.Windows.Forms.Label();
-            this.kanbanLink = new System.Windows.Forms.LinkLabel();
-            this.scrumLink = new System.Windows.Forms.LinkLabel();
-            this.xpLink = new System.Windows.Forms.LinkLabel();
+            this.scrumButton = new System.Windows.Forms.Button();
+            this.kanbanButton = new System.Windows.Forms.Button();
+            this.xpButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -98,6 +98,7 @@ namespace SoftDevMethodologies
             this.linkLabel1.TabIndex = 3;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "learn more";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabel1_LinkClicked);
             // 
             // linkLabel2
             // 
@@ -109,6 +110,7 @@ namespace SoftDevMethodologies
             this.linkLabel2.TabIndex = 4;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "learn more";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabel2_LinkClicked);
             // 
             // WaterStage
             // 
@@ -122,6 +124,7 @@ namespace SoftDevMethodologies
             this.WaterStage.TabIndex = 5;
             this.WaterStage.Text = "Requirements";
             this.WaterStage.UseVisualStyleBackColor = false;
+            this.WaterStage.Click += new System.EventHandler(this.WaterStage_Click);
             // 
             // button1
             // 
@@ -135,6 +138,7 @@ namespace SoftDevMethodologies
             this.button1.TabIndex = 6;
             this.button1.Text = "Design";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -148,6 +152,7 @@ namespace SoftDevMethodologies
             this.button2.TabIndex = 7;
             this.button2.Text = "Implementation";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -161,6 +166,7 @@ namespace SoftDevMethodologies
             this.button3.TabIndex = 8;
             this.button3.Text = "Testing";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -174,6 +180,7 @@ namespace SoftDevMethodologies
             this.button4.TabIndex = 9;
             this.button4.Text = "Maintenence";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -200,6 +207,7 @@ namespace SoftDevMethodologies
             this.button6.TabIndex = 12;
             this.button6.Text = "Plan";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -212,6 +220,7 @@ namespace SoftDevMethodologies
             this.button7.TabIndex = 13;
             this.button7.Text = "Design";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -225,6 +234,7 @@ namespace SoftDevMethodologies
             this.button8.TabIndex = 14;
             this.button8.Text = "Develop";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
@@ -238,6 +248,7 @@ namespace SoftDevMethodologies
             this.button9.TabIndex = 15;
             this.button9.Text = "Test";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 
@@ -251,6 +262,7 @@ namespace SoftDevMethodologies
             this.button10.TabIndex = 16;
             this.button10.Text = "Deploy";
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // waterfallArrow1
             // 
@@ -308,49 +320,58 @@ namespace SoftDevMethodologies
             this.agileArrow.Text = "↻";
             this.agileArrow.Click += new System.EventHandler(this.Label4_Click);
             // 
-            // kanbanLink
+            // scrumButton
             // 
-            this.kanbanLink.AutoSize = true;
-            this.kanbanLink.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.kanbanLink.Location = new System.Drawing.Point(548, 539);
-            this.kanbanLink.Name = "kanbanLink";
-            this.kanbanLink.Size = new System.Drawing.Size(141, 46);
-            this.kanbanLink.TabIndex = 22;
-            this.kanbanLink.TabStop = true;
-            this.kanbanLink.Text = "Kanban";
+            this.scrumButton.BackColor = System.Drawing.Color.Coral;
+            this.scrumButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.scrumButton.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.scrumButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.scrumButton.Location = new System.Drawing.Point(500, 525);
+            this.scrumButton.Name = "scrumButton";
+            this.scrumButton.Size = new System.Drawing.Size(160, 50);
+            this.scrumButton.TabIndex = 25;
+            this.scrumButton.Text = "Scrum";
+            this.scrumButton.UseVisualStyleBackColor = false;
+            this.scrumButton.Click += new System.EventHandler(this.scrumButton_Click);
             // 
-            // scrumLink
+            // kanbanButton
             // 
-            this.scrumLink.AutoSize = true;
-            this.scrumLink.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.scrumLink.Location = new System.Drawing.Point(761, 539);
-            this.scrumLink.Name = "scrumLink";
-            this.scrumLink.Size = new System.Drawing.Size(121, 46);
-            this.scrumLink.TabIndex = 23;
-            this.scrumLink.TabStop = true;
-            this.scrumLink.Text = "Scrum";
+            this.kanbanButton.BackColor = System.Drawing.Color.Coral;
+            this.kanbanButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.kanbanButton.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.kanbanButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.kanbanButton.Location = new System.Drawing.Point(720, 525);
+            this.kanbanButton.Name = "kanbanButton";
+            this.kanbanButton.Size = new System.Drawing.Size(160, 50);
+            this.kanbanButton.TabIndex = 26;
+            this.kanbanButton.Text = "Kanban";
+            this.kanbanButton.UseVisualStyleBackColor = false;
+            this.kanbanButton.Click += new System.EventHandler(this.kanbanButton_Click);
             // 
-            // xpLink
+            // xpButton
             // 
-            this.xpLink.AutoSize = true;
-            this.xpLink.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.xpLink.Location = new System.Drawing.Point(933, 539);
-            this.xpLink.Name = "xpLink";
-            this.xpLink.Size = new System.Drawing.Size(151, 46);
-            this.xpLink.TabIndex = 24;
-            this.xpLink.TabStop = true;
-            this.xpLink.Text = "Extreme";
+            this.xpButton.BackColor = System.Drawing.Color.Coral;
+            this.xpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.xpButton.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.xpButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.xpButton.Location = new System.Drawing.Point(940, 525);
+            this.xpButton.Name = "xpButton";
+            this.xpButton.Size = new System.Drawing.Size(160, 50);
+            this.xpButton.TabIndex = 27;
+            this.xpButton.Text = "Extreme";
+            this.xpButton.UseVisualStyleBackColor = false;
+            this.xpButton.Click += new System.EventHandler(this.xpButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BackColor = System.Drawing.Color.Green;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1116, 742);
-            this.Controls.Add(this.xpLink);
-            this.Controls.Add(this.scrumLink);
-            this.Controls.Add(this.kanbanLink);
+            this.ClientSize = new System.Drawing.Size(1119, 741);
+            this.Controls.Add(this.xpButton);
+            this.Controls.Add(this.kanbanButton);
+            this.Controls.Add(this.scrumButton);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
@@ -403,9 +424,9 @@ namespace SoftDevMethodologies
         private System.Windows.Forms.Label waterfallArrow3;
         private System.Windows.Forms.Label waterfallArrow4;
         private System.Windows.Forms.Label agileArrow;
-        private System.Windows.Forms.LinkLabel kanbanLink;
-        private System.Windows.Forms.LinkLabel scrumLink;
-        private System.Windows.Forms.LinkLabel xpLink;
+        private System.Windows.Forms.Button scrumButton;
+        private System.Windows.Forms.Button kanbanButton;
+        private System.Windows.Forms.Button xpButton;
     }
 }
 
