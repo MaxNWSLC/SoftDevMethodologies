@@ -33,7 +33,8 @@ namespace SoftDevMethodologies
         //waterfallLink
         private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            waterfall.ShowDialog();
+            Form2 waterfallInfo = new Form2("waterInfo");
+            waterfallInfo.ShowDialog();
         }
 
         private void LinkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -92,31 +93,36 @@ namespace SoftDevMethodologies
         //RequirementsBtn(waterfall)
         private void WaterStage_Click(object sender, EventArgs e)
         {
-            waterfall.ShowDialog();
+            Form2 requirementsInfo = new Form2("RequirementsInfo");
+            requirementsInfo.ShowDialog();
         }
 
         //DesignBtn(waterfall)
         private void button1_Click(object sender, EventArgs e)
         {
-            waterfall.ShowDialog();
+            Form2 designInfo = new Form2("designInfo");
+            designInfo.ShowDialog();
         }
 
         //ImplementationBtn(waterfall)
         private void button2_Click(object sender, EventArgs e)
         {
-            waterfall.ShowDialog();
+            Form2 implementationInfo = new Form2("ImplementationInfo");
+            implementationInfo.ShowDialog();
         }
 
         //TestingBtn(waterfall)
         private void button3_Click(object sender, EventArgs e)
         {
-            waterfall.ShowDialog();
+            Form2 testingInfo = new Form2("TestingInfo");
+            testingInfo.ShowDialog();
         }
 
         //MaintenenceBtn(waterfall)
         private void button4_Click(object sender, EventArgs e)
         {
-            waterfall.ShowDialog();
+            Form2 maintenenceInfo = new Form2("MaintenenceInfo");
+            maintenenceInfo.ShowDialog();
         }
     }
 }
