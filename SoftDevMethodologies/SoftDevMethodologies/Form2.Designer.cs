@@ -44,6 +44,7 @@ namespace SoftDevMethodologies
             this.consLabel = new System.Windows.Forms.Label();
             this.prosGroupBoxWat = new System.Windows.Forms.GroupBox();
             this.prosLabel = new System.Windows.Forms.Label();
+            this.waterrfallLink = new System.Windows.Forms.LinkLabel();
             this.consGroupBoxWat.SuspendLayout();
             this.prosGroupBoxWat.SuspendLayout();
             this.SuspendLayout();
@@ -60,6 +61,7 @@ namespace SoftDevMethodologies
             this.button4.TabIndex = 27;
             this.button4.Text = "Maintenence";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -73,10 +75,11 @@ namespace SoftDevMethodologies
             this.button3.TabIndex = 26;
             this.button3.Text = "Testing";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Coral;
+            this.button2.BackColor = System.Drawing.Color.DodgerBlue;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -86,6 +89,7 @@ namespace SoftDevMethodologies
             this.button2.TabIndex = 25;
             this.button2.Text = "Implementation";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -99,6 +103,7 @@ namespace SoftDevMethodologies
             this.button1.TabIndex = 24;
             this.button1.Text = "Design";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.DesignBtn_Click);
             // 
             // WaterStage
             // 
@@ -112,6 +117,7 @@ namespace SoftDevMethodologies
             this.WaterStage.TabIndex = 23;
             this.WaterStage.Text = "Requirements";
             this.WaterStage.UseVisualStyleBackColor = false;
+            this.WaterStage.Click += new System.EventHandler(this.RequirementsBtn_Click);
             // 
             // label1
             // 
@@ -175,9 +181,9 @@ namespace SoftDevMethodologies
             this.waterfallTextLabel.ForeColor = System.Drawing.Color.DodgerBlue;
             this.waterfallTextLabel.Location = new System.Drawing.Point(443, 41);
             this.waterfallTextLabel.Name = "waterfallTextLabel";
-            this.waterfallTextLabel.Size = new System.Drawing.Size(95, 22);
+            this.waterfallTextLabel.Size = new System.Drawing.Size(336, 66);
             this.waterfallTextLabel.TabIndex = 32;
-            this.waterfallTextLabel.Text = "Waterfall";
+            this.waterfallTextLabel.Text = "Waterfall\r\njhjfkldfjlgkjdlgkjdfg\r\nlkajdlksajdlkasjdlkjasdlkjasldjaslkj";
             // 
             // consGroupBoxWat
             // 
@@ -202,6 +208,7 @@ namespace SoftDevMethodologies
             // 
             // prosGroupBoxWat
             // 
+            this.prosGroupBoxWat.AutoSize = true;
             this.prosGroupBoxWat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.prosGroupBoxWat.Controls.Add(this.prosLabel);
             this.prosGroupBoxWat.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -221,12 +228,25 @@ namespace SoftDevMethodologies
             this.prosLabel.TabIndex = 0;
             this.prosLabel.Text = "Pros Label for Waterfall not for stages";
             // 
+            // waterrfallLink
+            // 
+            this.waterrfallLink.AutoSize = true;
+            this.waterrfallLink.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.waterrfallLink.Location = new System.Drawing.Point(24, 77);
+            this.waterrfallLink.Name = "waterrfallLink";
+            this.waterrfallLink.Size = new System.Drawing.Size(96, 30);
+            this.waterrfallLink.TabIndex = 35;
+            this.waterrfallLink.TabStop = true;
+            this.waterrfallLink.Text = "Waterfall";
+            this.waterrfallLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.waterrfallLink_LinkClicked);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
             this.ClientSize = new System.Drawing.Size(1119, 741);
+            this.Controls.Add(this.waterrfallLink);
             this.Controls.Add(this.consGroupBoxWat);
             this.Controls.Add(this.prosGroupBoxWat);
             this.Controls.Add(this.waterfallTextLabel);
@@ -268,5 +288,6 @@ namespace SoftDevMethodologies
         private System.Windows.Forms.Label consLabel;
         private System.Windows.Forms.GroupBox prosGroupBoxWat;
         private System.Windows.Forms.Label prosLabel;
+        private System.Windows.Forms.LinkLabel waterrfallLink;
     }
 }
