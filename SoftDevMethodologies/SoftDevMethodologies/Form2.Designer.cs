@@ -181,18 +181,18 @@ namespace SoftDevMethodologies
             this.waterfallTextLabel.ForeColor = System.Drawing.Color.DodgerBlue;
             this.waterfallTextLabel.Location = new System.Drawing.Point(443, 41);
             this.waterfallTextLabel.Name = "waterfallTextLabel";
-            this.waterfallTextLabel.Size = new System.Drawing.Size(336, 66);
+            this.waterfallTextLabel.Size = new System.Drawing.Size(95, 22);
             this.waterfallTextLabel.TabIndex = 32;
-            this.waterfallTextLabel.Text = "Waterfall\r\njhjfkldfjlgkjdlgkjdfg\r\nlkajdlksajdlkasjdlkjasdlkjasldjaslkj";
+            this.waterfallTextLabel.Text = "Waterfall";
             // 
             // consGroupBoxWat
             // 
             this.consGroupBoxWat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.consGroupBoxWat.Controls.Add(this.consLabel);
             this.consGroupBoxWat.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.consGroupBoxWat.Location = new System.Drawing.Point(747, 569);
+            this.consGroupBoxWat.Location = new System.Drawing.Point(572, 569);
             this.consGroupBoxWat.Name = "consGroupBoxWat";
-            this.consGroupBoxWat.Size = new System.Drawing.Size(360, 160);
+            this.consGroupBoxWat.Size = new System.Drawing.Size(535, 160);
             this.consGroupBoxWat.TabIndex = 34;
             this.consGroupBoxWat.TabStop = false;
             this.consGroupBoxWat.Text = "Cons";
@@ -212,9 +212,9 @@ namespace SoftDevMethodologies
             this.prosGroupBoxWat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.prosGroupBoxWat.Controls.Add(this.prosLabel);
             this.prosGroupBoxWat.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.prosGroupBoxWat.Location = new System.Drawing.Point(377, 569);
+            this.prosGroupBoxWat.Location = new System.Drawing.Point(12, 569);
             this.prosGroupBoxWat.Name = "prosGroupBoxWat";
-            this.prosGroupBoxWat.Size = new System.Drawing.Size(360, 160);
+            this.prosGroupBoxWat.Size = new System.Drawing.Size(535, 160);
             this.prosGroupBoxWat.TabIndex = 33;
             this.prosGroupBoxWat.TabStop = false;
             this.prosGroupBoxWat.Text = "Pros";
